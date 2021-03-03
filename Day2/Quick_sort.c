@@ -44,8 +44,8 @@ void quickSort(int arr[],int low,int high){
     if (low<high)
     {
         index=partition(arr,low,high);
-        quickSort(arr,low,index-1);
-        quickSort(arr,index+1,high);
+        quickSort(arr,index-1,high);
+        quickSort(arr,low,index+1);
     }
     
     
